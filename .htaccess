@@ -1,8 +1,0 @@
-<IfModule mod_rewrite.c>
-    RewriteEnngine on
-    RewriteBase /
-    RewriteCond %{REQUEST_URL} !^public
-    RewriteRule ^(.*)& public/$1 [L]
-    RewriteCond %{REQUEST_URI} !^/maintenance\.php$
-    RewriteRule ^(.*)$ http://domain.com/maintenance.html [R=307,L]
-</IfModule>
